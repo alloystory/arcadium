@@ -10,5 +10,8 @@
   "scripts": {},
   "author": "Aloysius Chan",
   "license": "ISC",
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
