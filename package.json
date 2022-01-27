@@ -2,7 +2,8 @@
   "name": "arcadium",
   "private": true,
   "workspaces": [
-    "packages/hardhat"
+    "packages/hardhat",
+    "packages/client"
   ],
   "version": "1.0.0",
   "description": "",
