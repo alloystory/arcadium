@@ -1,11 +1,13 @@
 {
   "name": "arcadium",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {},
+  "private": true,
   "workspaces": [
     "packages/hardhat"
   ],
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
   "author": "Aloysius Chan",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js"
 }
