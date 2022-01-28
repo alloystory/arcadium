@@ -2,8 +2,9 @@
   "name": "arcadium",
   "private": true,
   "workspaces": [
-    "packages/hardhat",
-    "packages/client"
+    "packages/client",
+    "packages/games",
+    "packages/hardhat"
   ],
   "version": "1.0.0",
   "description": "",
@@ -12,6 +13,7 @@
   "license": "ISC",
   "main": "index.js",
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
   }
 }

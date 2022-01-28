@@ -1,5 +1,5 @@
 {
-  "name": "hardhat",
+  "name": "@arcadium/hardhat",
   "version": "1.0.0",
   "license": "ISC",
   "private": true,

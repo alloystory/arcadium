@@ -1,0 +1,21 @@
+{
+  "name": "@arcadium/games",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/lodash": "^4.14.178",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "ts-node": "^10.4.0"
+  },
+  "scripts": {
+    "test": "mocha -p -r ts-node/register logic/**/*.test.ts"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
