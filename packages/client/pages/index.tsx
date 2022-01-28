@@ -11,46 +11,31 @@ const Home: NextPage = () => {
   })
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Arcadium</title>
       </Head>
 
-      <main className="container">
-        <h1>Welcome to Arcadium</h1>
-        {accountData ? (
-          <div>
-            {accountData.ens?.avatar && (
-              <Image src={accountData.ens.avatar} alt="ENS Avatar" />
-            )}
-            <div>
-              {accountData.ens?.name
-                ? `${accountData.ens.name} (${accountData.address})`
-                : accountData.address}
-            </div>
-            <div>Connected to {accountData.connector?.name}</div>
-            <button className="btn btn-primary" onClick={disconnect}>
-              Disconnect
-            </button>
-          </div>
-        ) : (
-          connectData.connectors.map((connector) => (
-            <button
-              key={connector.id}
-              className="btn btn-primary"
-              disabled={!connector.ready}
-              onClick={() => connect(connector)}
-            >
-              Connect via {connector.name}
-              {!connector.ready && ' (unsupported)'}
-            </button>
-          ))
-        )}
-        {connectError && (
-          <div>{connectError?.message ?? 'Failed to connect'}</div>
-        )}
-      </main>
-    </div>
+      <h1>Welcome to Arcadium</h1>
+      {!accountData ? (
+        connectData.connectors.map((connector) => (
+          <button
+            key={connector.id}
+            className="btn btn-primary"
+            disabled={!connector.ready}
+            onClick={() => connect(connector)}
+          >
+            Connect via {connector.name}
+            {!connector.ready && ' (unsupported)'}
+          </button>
+        ))
+      ) : (
+        <div>You are connected</div>
+      )}
+      {connectError && (
+        <div>{connectError?.message ?? 'Failed to connect'}</div>
+      )}
+    </>
   )
 }
 
