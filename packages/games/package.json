@@ -4,6 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "@arcadium/utils": "1.0.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.0",
     "@types/lodash": "^4.14.178",
@@ -14,8 +18,5 @@
   },
   "scripts": {
     "test": "mocha -p -r ts-node/register logic/**/*.test.ts"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }
