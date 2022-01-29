@@ -12,7 +12,7 @@ const Games: NextPage = () => {
   const games: Game[] = [
     {
       name: '2048',
-      link: '/two-zero-four-eight',
+      link: '/games/two-zero-four-eight',
       image: 'https://picsum.photos/600',
     },
   ]
