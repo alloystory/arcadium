@@ -1,5 +1,5 @@
 import Prompt from 'prompt-sync'
-import TZFEBoard from '.'
+import TZFEBoard from './index'
 
 const prompt = Prompt({ sigint: true })
 prompt('Press enter to play: ')

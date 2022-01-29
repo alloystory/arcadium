@@ -1,5 +1,5 @@
-import _, { first } from 'lodash'
-import assert from '@arcadium/utils/typescript/assert'
+import { assert } from '@arcadium/utils/'
+import _ from 'lodash'
 
 export type Row = [number, number, number, number]
 export type Board = [Row, Row, Row, Row]
