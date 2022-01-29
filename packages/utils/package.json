@@ -2,5 +2,9 @@
   "name": "@arcadium/utils",
   "private": true,
   "version": "1.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc"
+  }
 }
